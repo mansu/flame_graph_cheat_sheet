@@ -17,6 +17,10 @@ Of particular interest for flame graph analysis are functions that are both deep
 
 Typically time waiting for IO is not captured in a flamegraph since the CPU doesn't spend cycles waiting for a network call. To identify if we are waiting for IO in a flamegraoh, look at the tip of the needles to see if that is waiting on an IO function.
 
+## Identifying contention or deadlocks
+
+The tip of the needle in a flame graph shows the function we are waiting on. So, if multiple threads are deadlocked, following the needles often on a wide base would the paths your code took to deadlock or contention.
+
 
 ## Useful links
 * [Miha Rekar - What Are Flame Graphs and How to Read Them, RubyConfBY 2017](https://www.youtube.com/watch?v=6uKZXIwd6M0) - Great talk in reading a flame graph.
