@@ -20,4 +20,5 @@ Typically time waiting for IO is not captured in a flamegraph since the CPU does
 
 ## Useful links
 * [Miha Rekar - What Are Flame Graphs and How to Read Them, RubyConfBY 2017](https://www.youtube.com/watch?v=6uKZXIwd6M0) - Great talk in reading a flame graph.
-* [CPU Flame Graphs](https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html)
+* [CPU Flame Graphs](https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html) 
+* [Blazing performance with flame graphs](https://www.brendangregg.com/Slides/LISA13_Flame_Graphs.pdf)
