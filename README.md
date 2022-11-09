@@ -1,9 +1,6 @@
 # Flame graph cheat sheet
 A cheat sheet for working with flame graphs.
 
-## Talks on reading flame graphs
-[Miha Rekar - What Are Flame Graphs and How to Read Them, RubyConfBY 2017](https://www.youtube.com/watch?v=6uKZXIwd6M0)
-
 ## Debugging using flamegraphs
 
 ### Wide and tall areas are consuming most CPU.
@@ -19,3 +16,8 @@ Of particular interest for flame graph analysis are functions that are both deep
 ## IO is not captured on a flame graph.
 
 Typically time waiting for IO is not captured in a flamegraph since the CPU doesn't spend cycles waiting for a network call. To identify if we are waiting for IO in a flamegraoh, look at the tip of the needles to see if that is waiting on an IO function.
+
+
+## Useful links
+* [Miha Rekar - What Are Flame Graphs and How to Read Them, RubyConfBY 2017](https://www.youtube.com/watch?v=6uKZXIwd6M0) - Great talk in reading a flame graph.
+* [CPU Flame Graphs](https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html)
